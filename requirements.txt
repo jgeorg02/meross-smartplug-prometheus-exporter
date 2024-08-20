@@ -1,0 +1,2 @@
+prometheus-client
+meross_iot==0.4.7.3

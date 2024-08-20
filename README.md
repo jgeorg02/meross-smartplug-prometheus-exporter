@@ -1,2 +1,4 @@
 # meross-smartplug-prometheus-exporter
 A containarized Python-based exporter that integrates Meross smart plugs with Prometheus for real-time power consumption monitoring. This script connects to the Meross Cloud API to retrieve power metrics from smart plugs and exposes them as Prometheus metrics for easy monitoring and visualization.
+
+To use this project, simply run docker-compose up, which will automatically build the container image and create the container. Please make sure to update your Meross email and password in the <i>docker-compose.yaml</i> file. Additionally, depending on your account, you may need to update the Meross API URL specified in <i>main.py</i>.

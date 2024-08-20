@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  smart-plug:
+    build: ./
+    image: python-smart-plug
+    restart: always
+    environment:
+      SMART_PLUG_NUM: "${plug_num}" # plug's number
+      MEROSS_EMAIL: "${meros_email}"
+      MEROSS_PASSWORD: "${meros_password}" 
+    ports:
+      - 19998:19998
